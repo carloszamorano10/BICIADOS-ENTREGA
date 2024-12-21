@@ -129,6 +129,7 @@ footer {
 .rrss {
   i {
     margin: 10px;
+    color: black;
   }
 }
 .horarios {
@@ -138,7 +139,13 @@ footer {
   font-weight: 600;
 }
 
-@media (width >= 700px) {
+@media (width >= 600px) {
+  .cardCont {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width >= 800px) {
   body {
     grid-template-areas:
       "header header"
