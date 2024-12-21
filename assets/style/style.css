@@ -10,7 +10,7 @@ body{
     font-family: 'EB Garamond', 'Times New Roman', 'Times', 'serif';
 }
 
-.cont-logo, .cont-titulo, .filtro, .cardCont, .paginado{
+.cont-logo, .cont-titulo, .filtro, .cardCont, .paginado, .contMapa, footer{
     display: flex;
 }
 
@@ -31,12 +31,12 @@ body{
 
 .filtro{
     justify-content: end;
+    margin-right: 5px;
     label{
         margin-right: 8px;
     }
     select{
         border-radius: 5px;
-
     }
 }
 
@@ -65,4 +65,43 @@ body{
 
   .paginado{
     justify-content: center;
+    a{
+        text-decoration: none;
+    }
   }
+
+  .contMapa{
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-size: larger;
+        margin: 20px;
+    }
+  }
+  .mapa{
+    width: 80vw;
+    height: auto;
+  }
+
+  footer{
+    background-color: #f0ebea;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-style: italic;
+        font-size: x-large;
+        font-weight: 600;
+    }
+  }
+
+  .rrss{
+    i{
+        margin: 10px;
+    }
+  }
+.horarios{
+    font-weight: 400;
+}
+.resaltar{
+    font-weight: 600;
+}
