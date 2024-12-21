@@ -85,6 +85,7 @@ main {
     box-shadow: 1px 1px 1px 1px rgba(122, 113, 113, 0.473);
   }
 }
+
 .cardCont {
   display: grid;
   grid-template-columns: 1fr;
@@ -116,6 +117,7 @@ main {
 
 footer {
   grid-area: footer;
+  padding: 10px;
   background-color: #f0ebea;
   flex-direction: column;
   align-items: center;
@@ -194,5 +196,31 @@ footer {
 
   .paginado {
     margin: 15px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .logoPrincipal {
+    border-radius: 50%;
+  }
+  .rotate-center {
+    animation: rotate-center 3s ease-in-out both;
+  }
+  @keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .card {
+    transition: transform 0.5s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(0.9);
   }
 }
