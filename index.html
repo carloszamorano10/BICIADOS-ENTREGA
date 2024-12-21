@@ -14,27 +14,38 @@
   </head>
   <body>
     <header>
-      <div class="cont-logo">
+      <div class="cont-logo" id="inicio">
         <img class="logoPrincipal" src="./assets/img/BICIADOS.png" alt="Logo de la tienda">
       </div>
+    </header>
+    
+    <nav class="filtro">
       <div class="cont-titulo">
         <h1>BICIADOS</h1>
         <i class="fa-solid fa-bars"></i>
       </div>
-    </header>
+      <div class="orden">
+        <label for="search">Ordenar Por</label>
+        <select name="#" id="#">
+          <option value="">Cuadros</option>
+          <option value="">Ruedas</option>
+          <option value="">Bicicletas</option>
+          <option value="">Pedales</option>
+        </select>
+      </div>
+      <div class="ordenUl">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#catalogo">Ofertas</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+        </ul>
+      </div>
 
-    <nav class="filtro">
-      <label for="search">Ordenar Por</label>
-      <select name="#" id="#">
-        <option value="">Cuadros</option>
-        <option value="">Ruedas</option>
-        <option value="">Bicicletas</option>
-        <option value="">Pedales</option>
-      </select>
     </nav>
 
     <main>
-      <div class="cardCont">
+      <div class="cardCont" id="catalogo">
         <div class="card">
           <img src="./assets/img/785-Huez-105.jpg" alt="Bicicleta Look 785 Huez" />
           <p>Look 785 Huez Shimano 105</p>
@@ -67,12 +78,12 @@
         </div>
       </div>
       <div class="paginado">
-        <a href=""><</a>
+
         <a class="numero-paginado" href="">2</a>
         <a class="numero-paginado" href="">3</a>
         <a class="numero-paginado" href="">1</a>
         <a class="numero-paginado" href="">4</a>
-        <a href="">></a>
+
       </div>
     </main>
 
@@ -80,7 +91,7 @@
     
     
     <footer>
-      <div class="contMapa">
+      <div class="contMapa" id="nosotros">
   
         <p>Conoce Nuestra Tienda</p>
         <p class="horarios"><span class="resaltar">Horarios:</span>
